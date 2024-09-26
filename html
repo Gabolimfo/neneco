@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Cantinho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nosso Cantinho de Amor</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#fotos">Fotos</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#cartas">Cartas</a></li>
+        </ul>
+    </nav>
+
+    <section id="fotos">
+        <h2>Nossas Memórias em Fotos</h2>
+        <input type="file" id="uploadFoto" accept="image/*">
+        <button onclick="adicionarFoto()">Adicionar Foto</button>
+        <div id="galeria"></div>
+    </section>
+
+    <section id="textos">
+        <h2>Nossos Textos</h2>
+        <textarea id="textoInput" placeholder="Escreva seu texto aqui..."></textarea>
+        <button onclick="adicionarTexto()">Publicar Texto</button>
+        <div id="textosPublicados"></div>
+    </section>
+
+    <section id="cartas">
+        <h2>Nossas Cartas de Amor</h2>
+        <textarea id="cartaInput" placeholder="Escreva sua carta de amor..."></textarea>
+        <button onclick="adicionarCarta()">Enviar Carta</button>
+        <div id="cartasEnviadas"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Feito com amor ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
